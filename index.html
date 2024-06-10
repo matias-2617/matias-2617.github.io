@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body class="scroll">
+    <header class="encabezado">
+      <nav class="navegacion">
+        <a class="navegacion__enlace" href="#presentacion">
+          <h2 class="navegacion__titulo">Informatorio</h2>
+        </a>
+        <ul class="enlaces">
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#presentacion">Inicio</a>
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#sobre-mi">Sobre mi</a>
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#proyectos">Proyectos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="principal">
+      <section class="presentacion" id="presentacion">
+        <div class="presentacion__contenedor_info">
+          <h1 class="presentacion__titulo">Soy matias chamorro</h1>
+          <p class="presentacion__parrafo">
+            Estoy estudiando programación con la idea de ser Desarrollador de videojuegos.
+          </p>
+          <div class="presentacion__contenedor_botones">
+            <a href="#sobre-mi" class="boton" role="button">Sobre mí</a>
+            <a
+              href="./assets/docs/curriculo.pdf"
+              target="_blank"
+              class="boton boton_oscuro"
+              role="button"
+              >Descargar CV</a
+            >
+          </div>
+        </div>
+      </section>
+      <article class="articulo sobre_mi" id="sobre-mi">
+        <h2 class="articulo__titulo">Un poco sobre mi</h2>
+        <div class="articulo__contenedor_descripciones">
+          <section class="seccion_descripcion">
+            <div class="seccion_descripcion__porta_retrato">
+              <img
+                class="seccion_descripcion__imagen"
+                src="./assets/images/profile/trabajo2.jpeg"
+                alt="foto trabajando en la oficina"
+                title="recibido de electricista"
+              />
+            </div>
+            <div
+              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+              aria-label="descripcion personal"
+            >
+              <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                Mi historia
+              </h3>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+              Soy una persona muy imaginativa, por lo cual tengo muchas ideas.
+              Mi intención es aprender a implementar esas ideas y así poder crear 
+              videojuegos según las ideas que tengo y las influencias que pueda encontrar.
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+              Soy electricista y técnico de refrigeración.
+              Siempre me gustó la parte técnica, tanto a nivel personal como laboral.
+              También me interesa la informática, así que esto es algo que me gusta mucho.
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+              </p>
+            </div>
+          </section>
+          <section class="seccion_descripcion">
+            <div
+              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+              aria-label="descripcion personal"
+            >
+              <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
+                Mis hobbies
+              </h3>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-describedby="mis_hobbies_titulo"
+              >
+              Uno de mis hobbies es tocar la guitarra.
+              Estudié un tiempo con un profesor particular
+              y después fui practicando de a poco solo.
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-describedby="mis_hobbies_titulo"
+              >
+              Otro de mis hobbies es la fotografía, de la cual
+              disfruto hacer fotos de paisajes y abstractas.
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-describedby="mis_hobbies_titulo"
+              >
+              </p>
+            </div>
+            <div class="seccion_descripcion__porta_retrato">
+              <img
+                class="seccion_descripcion__imagen seccion_descripcion__imagen_variante"
+                src="./assets/images/profile/trabajo3.jpeg"
+                alt="foto mientras me encontraba en una reunion de trabajo"
+                title="practicando guitarra"
+              />
+              <img
+              class="seccion_descripcion__imagen seccion_descripcion__imagen_variante2"
+              src="./assets/images/profile/fotografia de puente.jpeg"
+              alt="foto mientras me encontraba en una reunion de trabajo"
+              title="puente chaco-corrientes"
+            />
+            </div>
+          </section>
+        </div>
+      </article>
+      <article class="articulo proyectos" id="proyectos">
+        <h2 class="articulo__titulo">Mis proyectos</h2>
+        <div class="contenedor_tarjetas_grid">
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/coliseo2.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 1"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_1">Aramazd: El Último Primordial</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_1"
+              >
+              es una idea de un videojuegos del genero roguelike el cual es un coliseo en la galaxia creada
+              por un dios omnipotente aburrido y abrumado por su poder.
+              </p>
+              <a href="#" class="boton boton_oscuro" target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/coliseo espacial2.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 2"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_2">Aramazd: El Último Primordial</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_2"
+              >
+              en el juego abra varios escensarios, monstruos, situaciones y personajes jugables
+              </p>
+              <a href="#" class="boton" target="_blank">Ver proyecto</a>
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/coliseo espacial1.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 3"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_3">ideas posibles para coliseos</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_3"
+              >
+              la idea de un coliseo que abarque difenrentes seres con historias propias.
+              moral y motivos propios por el cual luchar y llegar a su proposito, o no.
+              </p>
+              <a href="#" class="boton boton_oscuro" target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/coleseo1.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 4"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_4">Aramazd: El Último Primordial</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_4"
+              >
+              LORE: 
+
+              En los confines del universo, existe una raza de seres extraordinarios
+              dotados de inmenso poder, habilidades sobrenaturales e inteligencia incomparable.
+              Sin embargo, su origen es un enigma incluso para ellos mismos.
+              Surgieron en un lugar donde el tiempo y el espacio se entrelazan en complejas formas
+              y su propósito inicial era desconocido.
+
+              Al principio, estos seres, conocidos como los Primordiales, 
+              se embarcaron en una búsqueda para poner a prueba sus habilidades
+              y competir con otros seres poderosos en el vasto cosmos.
+               Algunos de ellos, como Dazhbog, el primogénito, y Orunlá, el segundo en nacer,
+              encontraron desafíos dignos de sus habilidades y continuaron explorando
+              el universo en busca de nuevos horizontes.
+
+              Sin embargo, Aramazd, el tercero en nacer, comenzó a cuestionar el propósito de su existencia.
+              A medida que viajaba por las estrellas, se encontró cada vez más solo, incapaz de encontrar
+              un oponente que igualara su poder. Frustrado por la falta de desafíos, Aramazd se sumió
+              en la desesperación y la amargura.
+
+              Finalmente, Aramazd decidió enfrentarse a sus propios hermanos en un intento desesperado
+              por encontrar un oponente digno. Desafiando a Dazhbog, Orunlá y Akasha, el último en nacer,
+              Aramazd buscó en la confrontación la validación de su existencia y la oportunidad de probar
+              su máximo poder.
+
+              La batalla entre los hermanos Primordiales fue cataclísmica, sacudiendo los cimientos del universo
+              mismo. En medio del caos y la destrucción, Aramazd emergió como el único sobreviviente,
+              pero su victoria fue hueca. Aunque había demostrado su fuerza, la vacuidad de su triunfo
+              lo consumía.
+
+              Con Dazhbog, Orunlá y Akasha caídos a manos de Aramazd, el tercero en nacer,
+              la era de los dioses primordiales llegó a su fin. Con el paso del tiempo
+              Aramazd, en su búsqueda de propósito, se sumergió en la creación y la experimentación.
+              Utilizando sus vastos poderes, comenzó a dar forma a mundos y coliseos,
+              convocando a los más poderosos luchadores de toda la creación para satisfacer su insaciable
+              sed de desafíos.
+
+              Así nació el Coliseo Universal, una creación de Aramazd destinada a ser el campo de batalla
+              donde los seres más valientes y poderosos serían puestos a prueba. Pero detrás de su aparente
+              búsqueda de desafíos y entretenimiento, Aramazd oculta un oscuro propósito, uno que solo los
+              más astutos y valientes guerreros podrán descubrir y enfrentar.
+              </p>
+              <a href="#" class="boton" target="_blank">Ver proyecto</a>
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/Aramazd.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 5"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_5">ideas para la creacion del dios principal Aramazd</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_5"
+              >
+              <h2>Aramazd:</h2>
+
+              Historia: Aramazd, basado en la mitología armenia, es un creador y líder entre los Primordiales.
+              Conocido como el dios supremo, Aramazd es el arquitecto del universo y el maestro de la creación.
+              
+              Personalidad: Aramazd es poderoso, ambicioso y determinado.
+              Tiene una visión grandiosa y está dispuesto a hacer lo que sea necesario para alcanzar sus metas.
+              Es un estratega astuto que utiliza su poder para dar forma al mundo a su imagen.
+              
+              Propósito: Aramazd busca dominar el universo y establecer su supremacía sobre todos los demás seres.
+              Su propósito es ejercer control sobre la creación y consolidar su poder como el gobernante indiscutible
+              del cosmos
+              </p>
+              <a href="#" class="boton boton_oscuro" target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/Aramazd2.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 6"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_6">Aramazd el tercer hermano, asesino e incredulo de sus actos</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_6"
+              >
+              </p>
+              <a href="#" class="boton" target="_blank">Ver proyecto</a>
+            </div>
+          </article>
+        </div>
+      </article>
+    </main>
+    <footer class="pie_de_pagina" role="contentinfo">
+      <div class="pie_de_pagina__columna">
+        <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
+        <ul class="enlaces enlaces_redes">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://github.com/matias-2617"
+              target="_blank"
+              ><img
+                class="enlaces__icono"
+                src="./assets/images/logos/github-logo.png"
+                alt="logo de github"
+                title="github"
+            /></a>
+          </li>
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://www.instagram.com/chamorromatias_2617/?hl=es-la"
+              target="_blank"
+            >
+              <img
+                class="enlaces__icono"
+                src="./assets/images/logos/ig-logo.png"
+                alt="logo de instagram"
+                title="instagram"
+              />
+            </a>
+          </li>
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://twitter.com"
+              target="_blank"
+              ><img
+                class="enlaces__icono"
+                src="./assets/images/logos/x-logo.png"
+                alt="logo de X"
+                title="X"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="pie_de_pagina__columna">
+        <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
+        <ul class="enlaces enlaces_vertical">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="mailto:mail@mail.com"
+              target="_blank"
+              >Mail: chamorro2617@outlook.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="pie_de_pagina__columna" role="navigation">
+        <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+        <ul class="enlaces enlaces_vertical">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="#presentacion"
+              >Inicio</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
+              >Sobre mi</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos"
+              >Proyectos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="pie_de_pagina__copyright">
+        <p>©️Copyright 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>
